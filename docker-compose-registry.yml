@@ -5,7 +5,7 @@ services:
     image: joxit/docker-registry-ui:main
     restart: always
     ports:
-      - 80:80
+      - 82:80
     environment:
       - SINGLE_REGISTRY=true
       - REGISTRY_TITLE=Docker Registry UI
@@ -24,7 +24,7 @@ services:
     image: registry:2.8.2
     restart: always
     ports:
-       - 5001:5000    
+       - 5001:5000
     environment:
       REGISTRY_HTTP_HEADERS_Access-Control-Allow-Origin: '[http://registry.example.com]'
       REGISTRY_HTTP_HEADERS_Access-Control-Allow-Methods: '[HEAD,GET,OPTIONS,DELETE]'
