@@ -1,3 +1,4 @@
+
 Application
 I had to deploy an application named "student_list", which is very basic and enables POZOS to show the list of some students with their age.
 
@@ -19,7 +20,7 @@ Then, I'll show you how I built and tested the architecture to justify my choice
 Third and last part will be about to provide the deployment process I suggest for this application.
 
 The files' role
-In my delivery you can find three main files : a Dockerfile, a docker-compose.yml and a docker-compose.registry.yml
+In my delivery you can find three main files : a Dockerfile, a docker-compose.yml and a docker-compose-registry.yml
 
 docker-compose.yml: to launch the application (API and web app)
 docker-compose.registry.yml: to launch the local registry and its frontend
@@ -32,7 +33,8 @@ Considering you just have cloned this repository, you have to follow those steps
 
 Change directory and build the api container image :
 cd ./mini-projet-docker/simple_api
-docker build . -t api.student_list.img
+docker build . -t api_image
+# screeshot
 docker images
 1-docker images
 
