@@ -26,4 +26,5 @@ Part 1
 1. Change directory and build the api container image :
 cd ./mini-projet-docker/simple_api
 docker build . -t api.student_list.img
-docker images
+![image](https://github.com/user-attachments/assets/2f6b6222-c8d0-42b3-9d64-5e76f31260d1)
+
