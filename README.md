@@ -27,4 +27,14 @@ Part 1
 cd ./mini-projet-docker/simple_api
 docker build . -t api.student_list.img
 ![image](https://github.com/user-attachments/assets/2f6b6222-c8d0-42b3-9d64-5e76f31260d1)
+2. Run the following command to run a docker container
+![image](https://github.com/user-attachments/assets/0d159e2c-f4e8-4f60-aada-8dd58ec8d55c)
+3. Run the following command to see the running conainer
+![image](https://github.com/user-attachments/assets/41c00b03-5f7a-404c-99ed-189d967ead12)
+4. This command returns a list of students and their ages
+![image](https://github.com/user-attachments/assets/366d0509-3ecd-4980-ac24-c293fcf4d76d)
+
+Part 2: Infrastructure as code
+
+
 
