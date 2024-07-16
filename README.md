@@ -35,6 +35,10 @@ docker build . -t api.student_list.img
 ![image](https://github.com/user-attachments/assets/366d0509-3ecd-4980-ac24-c293fcf4d76d)
 
 Part 2: Infrastructure as code
-
-
+1 - In the exercise, we are first asked to delete the various containers that have been created, because the ports of these containers can obstruct other containers.
+First stop the container
+![image](https://github.com/user-attachments/assets/0c9f438d-cb83-431f-8011-6d00ddb56670)
+then delete the container
+![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
+2. Change the dirrectory and run the command docker-compose up
 
