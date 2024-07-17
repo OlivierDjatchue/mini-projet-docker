@@ -7,24 +7,20 @@ services:
     ports:
       - 82:80
     environment:
+      - NGINX_PROXY_PASS_URL=pozos-registry-server:5000
       - SINGLE_REGISTRY=true
       - REGISTRY_TITLE=Docker Registry UI
       - DELETE_IMAGES=true
       - SHOW_CONTENT_DIGEST=true
-      - NGINX_PROXY_PASS_URL=http://192.168.33.10:5001
-      - SHOW_CATALOG_NB_TAGS=true
-      - CATALOG_MIN_BRANCHES=1
-      - CATALOG_MAX_BRANCHES=1
-      - TAGLIST_PAGE_SIZE=100
-      - REGISTRY_SECURED=false
-      - CATALOG_ELEMENTS_LIMIT=1000
     container_name: registry-ui
+    networks:
+      - pozos_reg.network
 
   registry-server:
     image: registry:2.8.2
     restart: always
     ports:
-       - 5001:5000
+       - 5000:5000
     environment:
       REGISTRY_HTTP_HEADERS_Access-Control-Allow-Origin: '[http://registry.example.com]'
       REGISTRY_HTTP_HEADERS_Access-Control-Allow-Methods: '[HEAD,GET,OPTIONS,DELETE]'
@@ -34,4 +30,8 @@ services:
       REGISTRY_STORAGE_DELETE_ENABLED: 'true'
     volumes:
       - ./registry/data:/var/lib/registry
-    container_name: registry-server
+    container_name: pozos-registry-server
+    networks:
+      - pozos_reg.network
+networks:
+  pozos_reg.network:
