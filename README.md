@@ -56,7 +56,16 @@ curl -u toto:python -X GET http://localhost:5000/pozos/api/v1.0/get_student_ages
    bash```
    cd ..
    docker-compose up -d
-   ````
-![image](https://github.com/user-attachments/assets/814caf8f-511f-4e4b-a928-cb05657968a5)
+   ```
+> ![image](https://github.com/user-attachments/assets/814caf8f-511f-4e4b-a928-cb05657968a5)
+2) Run the command docker ps to see the running containers
+> ![image](https://github.com/user-attachments/assets/180a111d-5ef2-46ff-8e1a-a76698661298)
+3) Open the port 80 of the docker labs
+> ![image](https://github.com/user-attachments/assets/422fb3e0-f5a6-4521-9bf4-6a8288c014fb)
+4) The webside shows the list of the students
+> 
+
+
+
 
 
