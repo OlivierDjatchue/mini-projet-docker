@@ -61,15 +61,15 @@ curl -u toto:python -X GET http://localhost:5000/pozos/api/v1.0/get_student_ages
 > ![image](https://github.com/user-attachments/assets/180a111d-5ef2-46ff-8e1a-a76698661298)
 3) Open the port 80 of the docker labs
 > ![image](https://github.com/user-attachments/assets/422fb3e0-f5a6-4521-9bf4-6a8288c014fb)
-4) Trying to show the student list 
+4) Try to show the list of students 
 > ![image](https://github.com/user-attachments/assets/24dee22e-38f1-4e73-968d-076e3b9965e2)
-5) The following error show that i habe to change to udpate the file index.php in order to fix the issue
+5) The previous errors show that I need to change the index.php file to fix the problem.
 ```bash
 vi /webapp/index.php
 ````
 >![image](https://github.com/user-attachments/assets/e5894bbe-3129-44c7-8333-9cc56c658458)
 
-6) Than click again on "List Student"
+6) Then click again on "List Student"
 ![image](https://github.com/user-attachments/assets/361b0749-950c-47dd-942d-0f6614586826)
 # Part 3: Pushing the image to a local registry
 1) First of all tag the image
@@ -81,13 +81,13 @@ docker tag api.student_list_img:latest localhost:5000/api.student_list_img:lates
 ```bash
 docker-compose -f docker-compose-registry.yml up -d
 ```
-The open the port 82 of the docker lab envirenmoment
+Then Open port 82 of the Docker Lab environment
 >![image](https://github.com/user-attachments/assets/acebb539-7591-43de-b926-758029056c46)
-3) pushing the image to registry
+3) Pushing the image to the local registry
 ```bash
 docker push localhost:5000/api.student_list_img:latest
 ````
-by Refrehing the page we should see the uploaded image
+by reoading the page we should see the uploaded image
 >![image](https://github.com/user-attachments/assets/16bfb733-a44e-455e-a2ce-8b820d2ff243)
 
 
