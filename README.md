@@ -6,20 +6,19 @@
 
 ## Period : march-april-may
 
-Our task is to deploy an application called "api", which displays a list of students and their ages. Our task is divided into 3 parts:
+Our task is to deploy an application called "api" that displays a list of students and their ages. Our task is divided into 3 parts:
 
-The first part consists of using docker commands to display the list of students.
-The second part consists of displaying the list of students using docker-compose
+The first part is to use docker commands to display the list of students.
+The second part is to display the list of students using docker-compose.
 The third part is to push our created image to the registry.
 Work plan
-We're going to set up the commands for the various containers
+We'll set up the commands for the different containers
 
-We're going to tag our image after running the api container that will allow us to see the list of students
-We're going to set up a container using docker-compose.yml for displaying student information
-We're going to create the registry using the docker-compose-registry so that we can host our application locally
+We're going to tag our image after running the API container that will allow us to see the list of students.
+We'll set up a container using docker-compose.yml to display student information.
+We'll create the registry using docker-compose-registry so that we can host our application locally.
 
-
-# Part 1: Build the image and run the container
+# Part 1:  Building the image and running the container
 
 1) Change directory and build the api container image :
 ```bash
@@ -29,7 +28,7 @@ docker images
 ```
 >![image](https://github.com/user-attachments/assets/2f6b6222-c8d0-42b3-9d64-5e76f31260d1)
 
-2) Move back to the root dir of the project and run the backend api container with those arguments :
+2) Go back to the root directory of the project and run the backend api container with these arguments
 
 ```bash
 cd ..
@@ -38,7 +37,7 @@ docker ps
 ```
 >![image](https://github.com/user-attachments/assets/0d159e2c-f4e8-4f60-aada-8dd58ec8d55c)
 
-3) Run the following command to see the running conainer
+3) Run the following command to see the running container
 
 >![image](https://github.com/user-attachments/assets/41c00b03-5f7a-404c-99ed-189d967ead12)
 
@@ -52,7 +51,7 @@ curl -u toto:python -X GET http://localhost:5000/pozos/api/v1.0/get_student_ages
 6) Delete the container
 >![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
 # Part 2: Infrastructure as code with docker compose
-1) go to the previous folder and run the docker compose up command
+1) Go to the previous folder and run the docker compose up command
    ```bash
    cd ..
    docker-compose up -d
