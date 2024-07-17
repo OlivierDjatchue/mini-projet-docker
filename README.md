@@ -87,7 +87,7 @@ Then Open port 82 of the Docker Lab environment
 ```bash
 docker push localhost:5000/api.student_list_img:latest
 ````
-by reoading the page we should see the uploaded image
+4) Reload the page in order to see uploaded image
 >![image](https://github.com/user-attachments/assets/16bfb733-a44e-455e-a2ce-8b820d2ff243)
 
 
