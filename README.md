@@ -50,6 +50,7 @@ curl -u toto:python -X GET http://localhost:5000/pozos/api/v1.0/get_student_ages
 6. Stop the Docker container
 >![image](https://github.com/user-attachments/assets/0c9f438d-cb83-431f-8011-6d00ddb56670)
 7. Delete the container
->![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2))
+>![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
 # Part 2: Infrastructure as code with docker compose
+1) 
 
