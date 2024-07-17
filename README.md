@@ -24,8 +24,11 @@ We're going to create the registry using the docker-compose-registry so that we 
 Part 1
 
 1. Change directory and build the api container image :
+```bash
 cd ./mini-projet-docker/simple_api
 docker build . -t api.student_list.img
+docker images
+```
 ![image](https://github.com/user-attachments/assets/2f6b6222-c8d0-42b3-9d64-5e76f31260d1)
 2. Run the following command to run a docker container
 ![image](https://github.com/user-attachments/assets/0d159e2c-f4e8-4f60-aada-8dd58ec8d55c)
