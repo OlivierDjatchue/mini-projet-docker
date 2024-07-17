@@ -33,11 +33,12 @@ docker build . -t api.student_list.img
 ![image](https://github.com/user-attachments/assets/41c00b03-5f7a-404c-99ed-189d967ead12)
 4. This command returns a list of students and their ages
 ![image](https://github.com/user-attachments/assets/366d0509-3ecd-4980-ac24-c293fcf4d76d)
+![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
 
 Part 2: Infrastructure as code
 1. This command returns a list of students and their ages
 ![image](https://github.com/user-attachments/assets/0c9f438d-cb83-431f-8011-6d00ddb56670)
-2.
+
 ![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
 
 4. Change the dirrectory and run the command docker-compose up
