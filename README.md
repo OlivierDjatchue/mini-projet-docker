@@ -37,8 +37,8 @@ docker build . -t api.student_list.img
 Part 2: Infrastructure as code
 1. This command returns a list of students and their ages
 ![image](https://github.com/user-attachments/assets/0c9f438d-cb83-431f-8011-6d00ddb56670)
-2. 
- ![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
+2.
+![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
 
-3. Change the dirrectory and run the command docker-compose up
+4. Change the dirrectory and run the command docker-compose up
 
