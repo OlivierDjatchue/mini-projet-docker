@@ -72,6 +72,13 @@ vi /webapp/index.php
 
 6) Than click again on "List Student"
 ![image](https://github.com/user-attachments/assets/361b0749-950c-47dd-942d-0f6614586826)
+# Part 3: Pushing the image to a local registry
+1) First of all tag the image
+```bash
+docker tag api.student_list_img localhost:5000/api.student_list_img
+```
+>![image](https://github.com/user-attachments/assets/be8826f2-cb33-4646-901b-c3211dcaa8cd)
+2)
 
 
 
