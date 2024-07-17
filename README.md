@@ -29,7 +29,7 @@ docker images
 ```
 >![image](https://github.com/user-attachments/assets/2f6b6222-c8d0-42b3-9d64-5e76f31260d1)
 
-3) Move back to the root dir of the project and run the backend api container with those arguments :
+2) Move back to the root dir of the project and run the backend api container with those arguments :
 
 ```bash
 cd ..
@@ -42,15 +42,14 @@ docker ps
 
 >![image](https://github.com/user-attachments/assets/41c00b03-5f7a-404c-99ed-189d967ead12)
 
-4. This command returns a list of students and their ages
+4) This command returns a list of students and their ages
 ```bash
 curl -u toto:python -X GET http://localhost:5000/pozos/api/v1.0/get_student_ages
 ```
 >![image](https://github.com/user-attachments/assets/366d0509-3ecd-4980-ac24-c293fcf4d76d)
-6. Stop the Docker container
+5) Stop the Docker container
 >![image](https://github.com/user-attachments/assets/0c9f438d-cb83-431f-8011-6d00ddb56670)
-7. Delete the container
+6) Delete the container
 >![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
 # Part 2: Infrastructure as code with docker compose
-1) 
 
