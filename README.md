@@ -52,4 +52,11 @@ curl -u toto:python -X GET http://localhost:5000/pozos/api/v1.0/get_student_ages
 6) Delete the container
 >![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2)
 # Part 2: Infrastructure as code with docker compose
+1) go to the previous folder and run the docker compose up command
+   bash```
+   cd ..
+   docker-compose up -d
+   ````
+![image](https://github.com/user-attachments/assets/814caf8f-511f-4e4b-a928-cb05657968a5)
+
 
