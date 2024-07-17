@@ -62,8 +62,18 @@ curl -u toto:python -X GET http://localhost:5000/pozos/api/v1.0/get_student_ages
 > ![image](https://github.com/user-attachments/assets/180a111d-5ef2-46ff-8e1a-a76698661298)
 3) Open the port 80 of the docker labs
 > ![image](https://github.com/user-attachments/assets/422fb3e0-f5a6-4521-9bf4-6a8288c014fb)
-4) The webside shows the list of the students
-> 
+4) Trying to show the student list 
+> ![image](https://github.com/user-attachments/assets/24dee22e-38f1-4e73-968d-076e3b9965e2)
+5) The following error show that i habe to change to udpate the file index.php in order to fix the issue
+```bash
+vi /webapp/index.php
+````
+>![image](https://github.com/user-attachments/assets/e5894bbe-3129-44c7-8333-9cc56c658458)
+
+6) Than click again on "List Student"
+![image](https://github.com/user-attachments/assets/361b0749-950c-47dd-942d-0f6614586826)
+
+
 
 
 
