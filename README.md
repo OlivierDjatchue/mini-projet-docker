@@ -75,10 +75,24 @@ vi /webapp/index.php
 # Part 3: Pushing the image to a local registry
 1) First of all tag the image
 ```bash
-docker tag api.student_list_img localhost:5000/api.student_list_img
+docker tag api.student_list_img:latest localhost:5000/api.student_list_img:latest
 ```
 >![image](https://github.com/user-attachments/assets/be8826f2-cb33-4646-901b-c3211dcaa8cd)
-2)
+2)Running the Registry and the Regestry ui
+```bash
+docker-compose -f docker-compose-registry.yml up -d
+```
+The open the port 82 of the docker lab envirenmoment
+>![image](https://github.com/user-attachments/assets/acebb539-7591-43de-b926-758029056c46)
+3) pushing the image to registry
+```bash
+docker push localhost:5000/api.student_list_img:latest
+````
+by Refrehing the page we should see the uploaded image
+>![image](https://github.com/user-attachments/assets/16bfb733-a44e-455e-a2ce-8b820d2ff243)
+
+
+
 
 
 
