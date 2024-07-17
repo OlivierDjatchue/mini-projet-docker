@@ -19,12 +19,12 @@ We're going to set up a container using docker-compose.yml for displaying studen
 We're going to create the registry using the docker-compose-registry so that we can host our application locally
 
 
-# Part 1
+# Part 1: Build the image and run the container
 
 1) Change directory and build the api container image :
 ```bash
 cd ./simple_api
-docker build . -t api.student_list.img
+docker build . -t api.student_list_img
 docker images
 ```
 >![image](https://github.com/user-attachments/assets/2f6b6222-c8d0-42b3-9d64-5e76f31260d1)
@@ -51,4 +51,5 @@ curl -u toto:python -X GET http://localhost:5000/pozos/api/v1.0/get_student_ages
 >![image](https://github.com/user-attachments/assets/0c9f438d-cb83-431f-8011-6d00ddb56670)
 7. Delete the container
 >![image](https://github.com/user-attachments/assets/f7ef8309-3c3c-49fe-adbe-1ea95369c2c2))
+# Part 2: Infrastructure as code with docker compose
 
